@@ -1,10 +1,11 @@
 #include <stdio.h>
 #define PTR_T char
 #define CITE_T char
-// proof some concept when adding to a pointer
+// proof some concept when adding to a pointe
+// I use gdb, set b *main+47, and then I understand everything
 int main()
 {
-    char s[] = "0123456789";
+    char s[] = "0123456789";
     char* p = s;
     int i;
     for (i = 0; *(CITE_T *)((PTR_T *)p+i); ++i) {
